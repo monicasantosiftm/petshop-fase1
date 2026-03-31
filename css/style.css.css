@@ -1,0 +1,29 @@
+/* Customização para o PetShop Cão Feliz */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+
+/* Garante que o carrossel não fique gigante em telas grandes */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Estilo para o Relógio Digital no rodapé */
+#relogioDigital {
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.1rem;
+}
+
+/* Ajuste de acessibilidade: destaque em foco para navegação por teclado */
+a:focus, button:focus {
+    outline: 3px solid #ffc107;
+}
+
+/* Padronização do rodapé exigida no feedback */
+footer {
+    border-top: 4px solid #0d6efd;
+}
