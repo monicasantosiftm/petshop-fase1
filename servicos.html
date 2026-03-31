@@ -2,52 +2,76 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PetShop Cão Feliz - Serviços</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header>
-        <h1>PetShop Cão Feliz</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Página Inicial</a></li>
-                <li><a href="produtos.html">Nossos Produtos</a></li>
-                <li><a href="servicos.html">Nossos Serviços</a></li>
-            </ul>
-        </nav>
+    <header class="bg-dark text-white p-3 shadow-sm">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1 class="h3 mb-0">PetShop Cão Feliz</h1>
+            <nav>
+                <ul class="nav">
+                    <li class="nav-item"><a class="nav-link text-white" href="index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="produtos.html">Produtos</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="servicos.html">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-primary ms-3" href="cadastro.html">Agendar Agora</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <h2>Nossos Serviços</h2>
-        <p>Conheça os serviços prestados pela nossa equipe profissional:</p>
+    <main class="container mt-5">
+        <h2 class="text-center mb-4">Nossos Serviços</h2>
+        <p class="text-center mb-5 text-muted">Profissionais qualificados para o bem-estar do seu melhor amigo.</p>
 
-        <ul>
-            <li>
-                <strong>Banho e Tosa Completo</strong>
-                <p><em>Descrição:</em> Banho com água morna, shampoo específico, limpeza de ouvidos, corte de unhas e tosa (máquina ou tesoura).</p>
-                <p><em>Valor:</em> R$ 80,00</p>
-                <p><em>Tele-busca disponível?</em> Sim (Taxa adicional de R$ 15,00).</p>
-            </li>
-            <br>
-            <li>
-                <strong>Consulta Veterinária de Rotina</strong>
-                <p><em>Descrição:</em> Avaliação clínica geral, verificação de peso, checagem de vacinas e vermífugos.</p>
-                <p><em>Valor:</em> R$ 150,00</p>
-                <p><em>Tele-busca disponível?</em> Não. Apenas presencial na clínica.</p>
-            </li>
-            <br>
-            <li>
-                <strong>Hospedagem Diária (Creche)</strong>
-                <p><em>Descrição:</em> Espaço com recreação, socialização com outros cães e supervisão 24h.</p>
-                <p><em>Valor:</em> R$ 90,00 (por dia)</p>
-                <p><em>Tele-busca disponível?</em> Sim (Taxa de deslocamento de acordo com o bairro).</p>
-            </li>
-        </ul>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm border-primary">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-primary">Banho e Tosa Completo</h5>
+                        <p class="card-text text-start mt-3">Banho morno, shampoo específico, corte de unhas e tosa higiênica.</p>
+                        <p class="fw-bold">Valor: R$ 80,00</p>
+                        <span class="badge bg-success">Tele-busca Disponível</span> </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-primary">Consulta Veterinária</h5>
+                        <p class="card-text text-start mt-3">Avaliação clínica geral, verificação de vacinas e peso.</p>
+                        <p class="fw-bold">Valor: R$ 150,00</p>
+                        <span class="badge bg-secondary">Apenas Presencial</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-primary">Hospedagem (Creche)</h5>
+                        <p class="card-text text-start mt-3">Espaço recreativo com supervisão 24h para o seu pet brincar.</p>
+                        <p class="fw-bold">Valor: R$ 90,00 / dia</p>
+                        <span class="badge bg-success">Tele-busca Disponível</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="text-center mt-5">
+            <a href="cadastro.html" class="btn btn-primary btn-lg px-5">Agendar um Serviço</a>
+        </div>
     </main>
 
-    <hr>
-    <footer>
-        <p>&copy; 2023 PetShop Cão Feliz.</p>
-        <nav><a href="index.html">Voltar ao Início</a></nav>
+    <footer class="bg-dark text-white text-center p-4 mt-5">
+        <div class="container">
+            <p id="relogioDigital" class="text-info font-monospace small"></p> <p class="mb-0">&copy; 2026 Mônica Santos - Todos os direitos reservados.</p>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
